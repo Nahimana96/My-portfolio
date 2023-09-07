@@ -29,35 +29,36 @@ const Skills = () => {
           <div className="grid grid-cols-2 gap-8">
             <div className="flex items-center">
               <Logo imageSource={reactLogo} alt={"react logo"} />
-              <p className="md:pl-5 pl-2 text-lg text-gray-400">React</p>
+              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">React</p>
             </div>
             <div className="flex items-center">
               <Logo imageSource={htmlLogo} alt={"html logo"} />
-              <p className="md:pl-5 pl-2 text-lg text-gray-400">html</p>
+              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">html</p>
             </div>
             <div className="flex items-center">
               <Logo imageSource={cssLogo} alt={"css logo"} />
-              <p className="md:pl-5 pl-2 text-lg text-gray-400">Css</p>
+              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">Css</p>
             </div>
             <div className="flex items-center">
               <Logo imageSource={sassLogo} alt={"sass logo"} />
-              <p></p>
-              <p className="md:pl-5 pl-2 text-lg text-gray-400">Sass</p>
+              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">Sass</p>
             </div>
             <div className="flex items-center">
               <Logo imageSource={JsLogo} alt={"Js logo"} />
-              <p className="md:pl-5 pl-2 text-lg text-gray-400">Javascript</p>
+              <p className="md:pl-5 pl-2md: text-lg text-gray-400">
+                Javascript
+              </p>
             </div>
             <div className="flex items-center">
               <Logo imageSource={tailwindLogo} alt={"tailwind logo"} />
-              <p className="md:pl-5 pl-2 text-lg text-gray-400">Tailwind</p>
+              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">Tailwind</p>
             </div>
             <div className="flex items-center">
               <Logo
                 imageSource={styledComponent}
                 alt={"styledComponent logo"}
               />
-              <p className="md:pl-5 pl-2 text-lg text-gray-400">
+              <p className="md:pl-5 pl-2md: md:text-lg text-gray-400">
                 Styled component
               </p>
             </div>
@@ -69,15 +70,17 @@ const Skills = () => {
           <div className="grid grid-cols-2 gap-8">
             <div className="flex items-center">
               <Logo imageSource={nodeLogo} alt={"NodeJS logo"} />
-              <p className="md:pl-5 pl-2 text-lg text-gray-400">Node JS</p>
+              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">Node JS</p>
             </div>
             <div className="flex items-center">
               <Logo imageSource={mongodbLogo} alt={"mongoDB logo"} />
-              <p className="md:pl-5 pl-2 text-lg text-gray-400">Mongo DB</p>
+              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">Mongo DB</p>
             </div>
             <div className="flex items-center">
               <Logo imageSource={expressLogo} alt={"expressJs logo"} />
-              <p className="md:pl-5 pl-2 text-lg text-gray-400">Express JS</p>
+              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">
+                Express JS
+              </p>
             </div>
           </div>
         </div>
