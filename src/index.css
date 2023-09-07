@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .hover {
+    @apply md:bg-[#181824] md:opacity-0 mt-2 md:mt-0 flex justify-start md:absolute items-center md:justify-center md:top-0 md:left-0 md:h-full md:w-full md:hover:opacity-[0.8] ease-out md:transition-opacity md:duration-500;
+  }
+}
