@@ -1,10 +1,10 @@
-// Crazee Burger
+//Site Crazee Burger
 import LoginPage from "../assets/projects/CrazeeBurger/LoginPage.png";
 import AdminMode from "../assets/projects/CrazeeBurger/mode admin.png";
 import Basket from "../assets/projects/CrazeeBurger/Panier.png";
 import ProductPage from "../assets/projects/CrazeeBurger/ProductPage.png";
 import StockEmpty from "../assets/projects/CrazeeBurger/Stock epuisé.png";
-// Sophie photographe
+//Portfolio de Sophie photographe
 import Home from "../assets/projects/Sophie/Accueil.png";
 import AddPhoto from "../assets/projects/Sophie/Ajouter.png";
 import Modify from "../assets/projects/Sophie/Modifier.png";
@@ -14,14 +14,22 @@ import Kasa from "../assets/projects/Kasa/kasa.png";
 import Scroll from "../assets/projects/Kasa/Scroll.png";
 import About from "../assets/projects/Kasa/Apropos.png";
 import ProductPage1 from "../assets/projects/Kasa/FicheProduit.png";
-// Booki
+// Site Booki
 import Booki from "../assets/projects/Booki/Booki.png";
 import Booki2 from "../assets/projects/Booki/Booki2.png";
+// Site mon vieux grimoire
+import HomeGrimoire from "../assets/projects/Grimoire/Accueil.png";
+import Books from "../assets/projects/Grimoire/Livres.png";
+import LoginPage2 from "../assets/projects/Grimoire/Login.png";
+import PostBook from "../assets/projects/Grimoire/PostBook.png";
+import BookDetails from "../assets/projects/Grimoire/BookDetails.png";
+
 //photo de couverture
 import burger from "../assets/projects/CrazeeBurger/LoginPage.png";
 import kasa from "../assets/projects/Kasa/kasa.png";
 import sophie from "../assets/projects/Sophie/Accueil.png";
 import booki from "../assets/projects/Booki/Booki.png";
+import grimoire from "../assets/projects/Grimoire/Couverture.png";
 export const projects = [
   {
     id: 1,
@@ -31,7 +39,7 @@ export const projects = [
       text: `Ce site web est une simulation d’un site de commande de nourriture, il a été développé avec React. 
   L’objectif de ce projet était de développer un site web comme dans les entreprises en appliquant un système de ticket par feature (méthodologie agile).
   `,
-      tools: "Trello, Git, Vercel, React icons, Styled component",
+      tools: "ReactJs, Styled component, Trello, Git, Vercel, React icons",
     },
     images: [LoginPage, AdminMode, Basket, ProductPage, StockEmpty],
     cover: burger,
@@ -51,6 +59,23 @@ export const projects = [
     cover: sophie,
     githubLink:
       "https://github.com/Nahimana96/projet-3-creation-d-un-portfolio-dynamique.git",
+  },
+  {
+    id: 5,
+    title: "Mon vieux grimoire",
+    description: {
+      title: "Mon vieux grimoire",
+      text: `Ce projet consiste à créer un site de référencement et de notation de livres. Ce site permettra aux membres d’y ajouter des nouveaux livres et de mettre une note visible par le public.
+
+      Mon rôle a été de développer le backend du Site en me basant sur les spécifications
+       technique de l'API 
+      `,
+      tools: "NodeJs, ExpressJs, MongoDB, Postman",
+    },
+    images: [HomeGrimoire, Books, LoginPage2, PostBook, BookDetails],
+    cover: grimoire,
+    githubLink:
+      "https://github.com/Nahimana96/P7_Developpez-le-back-end-d-un-site-de-notation-de-livres.git",
   },
   {
     id: 3,

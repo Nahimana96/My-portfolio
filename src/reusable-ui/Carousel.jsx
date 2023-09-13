@@ -15,16 +15,16 @@ const Carousel = ({ images, length }) => {
       prevIndex === totalImages - 1 ? 0 : prevIndex + 1
     );
   };
-  // j'initialise l'index du tableau à zero à chaque fois que je ferme le block des détails
+  // j'initialise l'index du tableau à zero à chaque fois que je ferme la modale
   useEffect(() => {
     length === 0 && setCurrentIndex(0);
-  });
+  }, [length]);
 
   return (
     <div className="rounded-2xl w-full h-full relative">
       <div className="h-full w-full">
         <img
-          className="rounded-2xl h-full w-full md:object-cover"
+          className="rounded-2xl h-full w-full object-fill"
           src={images[currentIndex]}
           alt={`présentation visuelle du site`}
         />

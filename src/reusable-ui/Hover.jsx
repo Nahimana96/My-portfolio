@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../reusable-ui/Logo";
 import githubLogo from "../assets/icons/logo-github.png";
 import details from "../assets/icons/details.png";
+import { Link } from "react-scroll";
 
 const Hover = ({ link, handleClick }) => {
   return (

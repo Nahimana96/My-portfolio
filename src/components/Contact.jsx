@@ -4,7 +4,7 @@ import telephoneLogo from "../assets/icons/tel.png";
 import mailLogo from "../assets/icons/mail.png";
 const Contact = () => {
   return (
-    <div className="text-center mt-4 md:mt-8" id="contact">
+    <div className="text-center mt-7 md:mt-10" id="contact">
       <h1 className="text-2xl md:text-3xl mb-5 text-primary font-semibold">
         Contactez-moi
       </h1>
