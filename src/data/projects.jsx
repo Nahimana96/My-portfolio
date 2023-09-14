@@ -10,7 +10,7 @@ import AddPhoto from "../assets/projects/Sophie/Ajouter.png";
 import Modify from "../assets/projects/Sophie/Modifier.png";
 import LoginPage1 from "../assets/projects/Sophie/Login.png";
 // Kasa site de location immobilière
-import Kasa from "../assets/projects/Kasa/kasa.png";
+import Kasa from "../assets/projects/Kasa/Kasa.png";
 import Scroll from "../assets/projects/Kasa/Scroll.png";
 import About from "../assets/projects/Kasa/Apropos.png";
 import ProductPage1 from "../assets/projects/Kasa/FicheProduit.png";
@@ -26,7 +26,7 @@ import BookDetails from "../assets/projects/Grimoire/BookDetails.png";
 
 //photo de couverture
 import burger from "../assets/projects/CrazeeBurger/LoginPage.png";
-import kasa from "../assets/projects/Kasa/kasa.png";
+import kasa from "../assets/projects/Kasa/Kasa.png";
 import sophie from "../assets/projects/Sophie/Accueil.png";
 import booki from "../assets/projects/Booki/Booki.png";
 import grimoire from "../assets/projects/Grimoire/Couverture.png";
