@@ -18,8 +18,8 @@ const Header = () => {
     <div className="w-full max-w-7xl md:mt-10">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         {/* logo section */}
-        <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
-          <span className="text-primary hover:text-white">MHN.</span>
+        <div className="font-bold text-2xl flex items-center gap-1">
+          <span className="text-primary">MHN.</span>
         </div>
         {/* Mobile Menu icons */}
         <div
@@ -30,8 +30,8 @@ const Header = () => {
         </div>
         {/* Nav Link items */}
         <ul
-          className={`md:flex md:items-center md:pb-0 absolute md:static md:z-auto z-10 w-full md:w-auto mt-4 md:pl-0 pl-9 bg-slate-400 bg-opacity-20 sm:bg-transparent transition-all duration-500 ${
-            open ? "right-0" : "right-[-768px]"
+          className={`md:flex md:items-center md:pb-0 absolute left-0 md:static md:z-auto z-10 w-screen md:w-auto mt-4 md:pl-0 pl-9 bg-slate-400/20 sm:bg-transparent transition-all duration-500 ${
+            open ? "top-[40px]" : "top-[-768px]"
           }`}
         >
           {Links.map((link) => (

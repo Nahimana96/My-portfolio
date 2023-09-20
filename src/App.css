@@ -18,8 +18,10 @@ body {
 
 .outline {
   outline-color: #7562e0;
+  transition: all 0.3s ease-in-out;
 }
 
 .outline:hover {
   outline-color: white;
+  transition: all 0.3s ease-in-out;
 }
