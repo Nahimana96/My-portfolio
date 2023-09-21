@@ -22,8 +22,8 @@ const Skills = () => {
         </h1>
       </div>
       {/* block de compétences */}
-      <div className="flex md:grid md:grid-cols-2 md:gap-6 flex-col w-full">
-        <div className=" p-8 bg-[#181824] mb-6 md:mb-0 rounded-3xl">
+      <div className="flex lg:grid lg:grid-cols-2 lg:gap-6 flex-col w-full">
+        <div className=" p-8 bg-[#181824] mb-6 lg:mb-0 rounded-3xl">
           <h1 className="text-2xl text-gray-400 align-middle pb-5">Frontend</h1>
           {/* listes de skills frontend*/}
           <div className="grid grid-cols-2 gap-8">

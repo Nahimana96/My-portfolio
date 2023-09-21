@@ -4,8 +4,8 @@ import Carousel from "../../reusable-ui/Carousel";
 const Modal = ({ projectToDisplay, setProjectToDisplay }) => {
   return (
     <div className="md:fixed absolute md:w-screen w-full md:h-screen h-full top-0 left-0 bg-black/70 flex justify-center items-center">
-      <div className=" relative md:w-[60%] md:h-[85%] flex flex-col items-center p-6 py-10 md:pt-6 gap-5 md:bg-gray-300 bg-gray-300 z-30 rounded-lg overflow-y-auto">
-        <div className="md:w-[80%] w-[100%] h-[25%] md:h-[55%] mt-8">
+      <div className=" relative xl:w-[60%] md:w-[85%] md:h-[85%] flex flex-col items-center p-6 py-10 md:pt-6 gap-5 md:bg-gray-300 bg-gray-300 z-30 rounded-lg overflow-y-auto">
+        <div className="xl:w-[80%] md:w-[90%] sm:w-[100%] h-[25%] md:h-[50%] xl:h-[60%] mt-8">
           {/* je passe au composant "Carousel" le tableau des images à afficher si elles existent */}
           {/* Je lui passe aussi un tableau vide au cas où "projectToDisplay.images" sera "false" */}
           <Carousel

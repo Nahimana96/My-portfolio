@@ -14,7 +14,7 @@ const Projects = () => {
         Mes projets
       </h1>
       <div className="bg-[#181824] md:p-8 p-2 rounded-3xl relative">
-        <div className="md:grid flex flex-col gap-3 md:grid-cols-2 md:gap-3">
+        <div className="lg:grid flex flex-col gap-3 lg:grid-cols-2 lg:gap-3">
           {projects.map((project) => (
             <div key={project.id} className="relative mb-6">
               <img
@@ -22,7 +22,7 @@ const Projects = () => {
                 alt={`couverture du site ${project.title}`}
                 className="h-[90%] rounded-xl object-cover"
               />
-              <p className="text-gray-300 pt-3 hidden md:block">
+              <p className="text-gray-300 pt-3 hidden lg:block">
                 <span className="text-primary font-semibold">Outils: </span>
                 {project.description.tools}
               </p>

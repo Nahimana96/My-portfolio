@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer components {
   .hover {
-    @apply md:bg-[#181824] md:opacity-0 mt-2 md:mt-0 flex justify-start md:absolute items-center md:justify-center md:top-0 md:left-0 md:h-full md:w-full md:hover:opacity-[0.8] ease-out md:transition-opacity md:duration-500;
+    @apply lg:bg-[#181824] lg:opacity-0 mt-2 lg:mt-0 flex sm:justify-start lg:absolute items-center lg:justify-center lg:top-0 lg:left-0 lg:h-full lg:w-full lg:hover:opacity-[0.8] ease-out lg:transition-opacity lg:duration-500;
   }
   .arrow {
     @apply w-6 md:w-10 h-6 md:h-10 absolute top-[50%] translate-y-[-50%] text-opacity-0 bg-gray-300 opacity-80 rounded-full md:hover:scale-110 cursor-pointer transition-transform duration-200;
