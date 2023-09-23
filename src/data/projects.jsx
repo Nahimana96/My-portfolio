@@ -53,6 +53,8 @@ export const projects = [
       text: `Ce projet consiste à concevoir un site portfolio d’une photographe. Il s’agit de développer un interface utilisateur dynamique qui permet d’afficher, d’ajouter et de supprimer les photos dans la galerie. 
   Il a été développé en utilisant la méthodologie agile, car les tâches qui me sont attribuées étaient sur l’outils kanban. Sur ce dernier on pouvait voir les tâches à faire et celles qui ont déjà été terminées durant les sprints précédents.
  `,
+      challenge:
+        "La difficulté que j'ai rencontrée sur ce projet était de retirer dans la modale une photo que l'on vient de supprimer de la base des données sans recharger la page du site. Donc il fallait créer une fonction qui prend en paramètre l'id de l'objet cliqué pour le retirer de la liste des objets qui se trouvent dans le tableau",
       tools: "Vanilla Js, Css, Kanban, Swagger",
     },
     images: [Home, Modify, AddPhoto, LoginPage1],
@@ -70,6 +72,8 @@ export const projects = [
       Mon rôle a été de développer le backend du Site en me basant sur les spécifications
        technique de l'API 
       `,
+      challenge:
+        "Il fallait optimiser les images qui proviennent des requêtes des utilisateurs avant de les enregistrer dans la mémoire locale, cela a été possible en créant un middleware 'multer' qui utilise le package 'sharpMulter' permettant de changer le format en Webp et de modifier la taille d'une image. ",
       tools: "NodeJs, ExpressJs, MongoDB, Postman",
     },
     images: [HomeGrimoire, Books, LoginPage2, PostBook, BookDetails],
@@ -85,6 +89,8 @@ export const projects = [
       text: `Ce projet consiste à mettre à jour le site Kasa, qui est un site de location d’appartements entre particuliers basé en France. Le but est de passer à une stack complète en Javascript avec React pour le côté front-end et Node.Js pour le Backend.
   En tant que développeur front end je me suis occupé de la partie interface utilisateur en suivant les différentes maquettes que le designer a mis en place sur Figma mais aussi en prenant en compte des fonctionnalités attendues sur certaines parties du site.
   `,
+      challenge:
+        "Il fallait maîtriser la notion du cycle de vie d'un composant, car lorsqu'on utilise le hook 'useEffect' il faut toujours lui affecté un comportement(return) lorsque le composant sera dans la phase 'unmounting' ceci permettra en quelque sorte de réinitialiser le comportement du composant lorsqu'il sera affiché (mounting) une nouvelle fois. ",
       tools: "Create-react-app(CRA), React Router, Sass",
     },
     images: [Kasa, Scroll, ProductPage1, About],

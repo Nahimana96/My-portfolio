@@ -24,8 +24,14 @@ const Modal = ({ projectToDisplay, setProjectToDisplay }) => {
               ? projectToDisplay.description.text
               : ""}
           </p>
+          <p className="pt-4">
+            <span className="text-primary font-semibold">Défi: </span>{" "}
+            {projectToDisplay.description.challenge
+              ? projectToDisplay.description.challenge
+              : "Aucun"}
+          </p>
           <p className="pt-3">
-            <span className="text-primary font-semibold">Les outils: </span>
+            <span className="text-primary font-semibold">Outils: </span>
             {projectToDisplay.description
               ? projectToDisplay.description.tools
               : ""}
