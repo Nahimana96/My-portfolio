@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-
+import {
+  BsFillArrowLeftCircleFill,
+  BsFillArrowRightCircleFill,
+} from "react-icons/bs";
 const Carousel = ({ images, length }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalImages = images.length;
@@ -26,42 +29,19 @@ const Carousel = ({ images, length }) => {
         <img
           className="rounded-2xl h-full w-full object-fill"
           src={images[currentIndex]}
-          alt={`présentation visuelle du site`}
+          alt={`rendu visuelle du site`}
         />
       </div>
       {totalImages !== 1 && (
         <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="arrow left-[2%]"
+          <BsFillArrowLeftCircleFill
             onClick={goToPrevious}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15.75 19.5L8.25 12l7.5-7.5"
-            />
-          </svg>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="arrow right-[2%]"
+            className="arrow left-[2%]"
+          />
+          <BsFillArrowRightCircleFill
             onClick={goToNext}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M8.25 4.5l7.5 7.5-7.5 7.5"
-            />
-          </svg>
+            className="arrow right-[2%]"
+          />
         </div>
       )}
     </div>
