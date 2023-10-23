@@ -10,6 +10,8 @@ import styledComponent from "../assets/icons/styled-component.png";
 import htmlLogo from "../assets/icons/html.png";
 import expressLogo from "../assets/icons/express.png";
 import Logo from "../reusable-ui/Logo";
+import { motion } from "framer-motion";
+import Skill from "../reusable-ui/Skill";
 
 const Skills = () => {
   return (
@@ -27,61 +29,26 @@ const Skills = () => {
           <h1 className="text-2xl text-gray-400 align-middle pb-5">Frontend</h1>
           {/* listes de skills frontend*/}
           <div className="grid grid-cols-2 gap-8">
-            <div className="flex items-center">
-              <Logo imageSource={reactLogo} alt={"react logo"} />
-              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">React</p>
-            </div>
-            <div className="flex items-center">
-              <Logo imageSource={htmlLogo} alt={"html logo"} />
-              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">html</p>
-            </div>
-            <div className="flex items-center">
-              <Logo imageSource={cssLogo} alt={"css logo"} />
-              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">Css</p>
-            </div>
-            <div className="flex items-center">
-              <Logo imageSource={sassLogo} alt={"sass logo"} />
-              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">Sass</p>
-            </div>
-            <div className="flex items-center">
-              <Logo imageSource={JsLogo} alt={"Js logo"} />
-              <p className="md:pl-5 pl-2md: text-lg text-gray-400">
-                Javascript
-              </p>
-            </div>
-            <div className="flex items-center">
-              <Logo imageSource={tailwindLogo} alt={"tailwind logo"} />
-              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">Tailwind</p>
-            </div>
-            <div className="flex items-center">
-              <Logo
-                imageSource={styledComponent}
-                alt={"styledComponent logo"}
-              />
-              <p className="md:pl-5 pl-2md: md:text-lg text-gray-400">
-                Styled component
-              </p>
-            </div>
+            <Skill logo={reactLogo} alt="react logo" text="React Js" />
+            <Skill logo={htmlLogo} alt="Html logo" text="Html" />
+            <Skill logo={cssLogo} alt="CSS logo" text="CSS" />
+            <Skill logo={sassLogo} alt="Sass logo" text="Sass" />
+            <Skill logo={JsLogo} alt="Javascript logo" text="Javascript" />
+            <Skill logo={tailwindLogo} alt="Tailwind logo" text="Tailwind" />
+            <Skill
+              logo={styledComponent}
+              alt="styled-component logo"
+              text="Styled-component"
+            />
           </div>
         </div>
         <div className="p-8 bg-[#181824] rounded-3xl">
           <h1 className="text-2xl text-gray-400 align-middle pb-5">Backend</h1>
           {/* listes de skills backend*/}
           <div className="grid grid-cols-2 gap-8">
-            <div className="flex items-center">
-              <Logo imageSource={nodeLogo} alt={"NodeJS logo"} />
-              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">Node JS</p>
-            </div>
-            <div className="flex items-center">
-              <Logo imageSource={mongodbLogo} alt={"mongoDB logo"} />
-              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">Mongo DB</p>
-            </div>
-            <div className="flex items-center">
-              <Logo imageSource={expressLogo} alt={"expressJs logo"} />
-              <p className="md:pl-5 pl-2 md:text-lg text-gray-400">
-                Express JS
-              </p>
-            </div>
+            <Skill logo={nodeLogo} alt="Node logo" text="Node Js" />
+            <Skill logo={mongodbLogo} alt="MongoDB logo" text="Mongo DB" />
+            <Skill logo={expressLogo} alt="Express Js logo" text="Express Js" />
           </div>
         </div>
       </div>
