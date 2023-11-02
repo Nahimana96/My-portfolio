@@ -1,12 +1,19 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { fadeInAnimationVariants } from "./projects/Projects";
 const About = () => {
   return (
     <div className="text-center mt-5" id="about">
       <h1 className=" text-2xl md:text-3xl mb-5 text-primary font-semibold">
         À propos de moi
       </h1>
-      <div className=" bg-[#181824] rounded-3xl text-center px-7 mt-4 md:px-10 py-7 md:py-16">
+      <motion.div
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        className=" bg-[#181824] rounded-3xl text-center px-7 mt-4 md:px-10 py-7 md:py-16"
+      >
         <p className="text-gray-300 my-2 md:w-full leading-[2]">
           Je suis développeur fullstack Js avec un parcours initial en
           simulation numérique de l'ingénieur.Ce parcours antérieure m' a doté
@@ -19,7 +26,7 @@ const About = () => {
           développement front-end et le web design continue de me motiver dans
           cette nouvelle phase de ma carrière.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

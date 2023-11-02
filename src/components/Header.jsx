@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, scroll } from "react-scroll";
 import {
   BookOpenIcon,
   Bars3BottomRightIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
-import { useState } from "react";
+import { motion } from "framer-motion";
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    x: 100,
+  },
+  animate: (index) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.05 * index,
+    },
+  }),
+};
+
 const Header = () => {
   let Links = [
     { name: "À propos", link: "about" },
@@ -34,10 +49,15 @@ const Header = () => {
             open ? "top-[40px]" : "top-[-768px]"
           }`}
         >
-          {Links.map((link) => (
-            <li
+          {Links.map((link, index) => (
+            <motion.li
               key={link.name}
               className="md:ml-8 md:my-0 my-7 font-semibold cursor-pointer"
+              variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              custom={index}
             >
               <Link
                 to={link.link}
@@ -48,7 +68,7 @@ const Header = () => {
               >
                 {link.name}
               </Link>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>

@@ -11,6 +11,7 @@ import htmlLogo from "../assets/icons/html.png";
 import expressLogo from "../assets/icons/express.png";
 import Logo from "../reusable-ui/Logo";
 import { motion } from "framer-motion";
+import { fadeInAnimationVariants } from "./projects/Projects";
 import Skill from "../reusable-ui/Skill";
 
 const Skills = () => {
@@ -25,7 +26,13 @@ const Skills = () => {
       </div>
       {/* block de compétences */}
       <div className="flex lg:grid lg:grid-cols-2 lg:gap-6 flex-col w-full">
-        <div className=" p-8 bg-[#181824] mb-6 lg:mb-0 rounded-3xl">
+        <motion.div
+          variants={fadeInAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className=" p-8 bg-[#181824] mb-6 lg:mb-0 rounded-3xl"
+        >
           <h1 className="text-2xl text-gray-400 align-middle pb-5">Frontend</h1>
           {/* listes de skills frontend*/}
           <div className="grid grid-cols-2 gap-8">
@@ -41,8 +48,15 @@ const Skills = () => {
               text="Styled-component"
             />
           </div>
-        </div>
-        <div className="p-8 bg-[#181824] rounded-3xl">
+        </motion.div>
+        <motion.div
+          variants={fadeInAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          custom={1.5}
+          className="p-8 bg-[#181824] rounded-3xl"
+        >
           <h1 className="text-2xl text-gray-400 align-middle pb-5">Backend</h1>
           {/* listes de skills backend*/}
           <div className="grid grid-cols-2 gap-8">
@@ -50,7 +64,7 @@ const Skills = () => {
             <Skill logo={mongodbLogo} alt="MongoDB logo" text="Mongo DB" />
             <Skill logo={expressLogo} alt="Express Js logo" text="Express Js" />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
